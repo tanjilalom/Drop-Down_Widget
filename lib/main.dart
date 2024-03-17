@@ -42,7 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 40,),
             DropdownButton(
-
+              value: selected,
+              underline: Container(
+                height: 2,
+                color: Colors.red,
+              ),
                 items: [
                   DropdownMenuItem(value: "Easy", child: Text("Easy")),
                   DropdownMenuItem(value: "Medium", child: Text("Medium")),
@@ -52,7 +56,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     selected = value!;
                   });
-                }),
+                },
+
+
+            ),
           ],
         ),
       ),
