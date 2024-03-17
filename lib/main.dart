@@ -42,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 40,),
             DropdownButton(
+              elevation: 16,
               value: selected,
               underline: Container(
                 height: 2,
